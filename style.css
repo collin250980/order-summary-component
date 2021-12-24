@@ -1,0 +1,215 @@
+*, ::before, ::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Red Hat Display';
+}
+
+.bg-container{
+   width: 1440px;
+   height: 100vh;
+   background-color: #F2F2F2;
+   background-image: url(images/pattern-background-desktop.svg);
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.component-container{
+   width: 450px;
+   height: 697px;
+   border-radius: 20px;
+   background: #FFFFFF;
+   box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.img-illustration-hero{
+   background-image: url(images/illustration-hero.svg);
+   width: 100%;
+   height: 220px;
+}
+
+h1{
+   margin-top: 45px;
+   text-align: center;
+   font-size: 28px;
+   font-weight: 900px;
+   line-height: 37px;
+   color: #1F2E55
+}
+
+p.description{
+   margin-top: 17px;
+   margin-left: 48px;
+   margin-right: 48px;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 26px;
+   color: #717FA6;
+}
+
+.plan{
+   width: 354px;
+   height: 96px;
+   margin-top: 20px;
+   border-radius: 11px;
+   background-color: #F7F9FF;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+svg{
+   margin-left: 24px;
+}
+
+.plan-description{
+   margin-left: 20px;
+   width: 92px;
+}
+
+.plan-title{
+   font-size: 16px;
+   font-weight: 900;
+   line-height: 21px;
+   color: #1F2E55;
+}
+
+.plan-price{
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 21px;
+   color: #717FA6;
+}
+
+.plan-change{
+   margin-left: 94px;
+   font-size: 14px;
+   line-height: 19px;
+}
+
+.plan-change a:active{
+   color: #766CF1;
+   text-decoration: none;
+}
+
+.proceed-payment{
+   width: 354px;
+   height: 50px;
+   margin-top: 32px;
+   text-align: center;
+   border: none;
+   border-radius: 11px;
+   background: #382AE1;
+   box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+   font-size: 15px;
+   font-weight: 900;
+   color: #FFFFFF;
+   cursor: pointer;
+}
+
+.proceed-payment:active{
+   background: #766CF1;
+}
+
+.cancel-order{
+   margin-top: 32px;
+   font-size: 15px;
+   font-weight: 900;
+}
+
+.cancel-order a{
+   color: #717FA6;
+   text-decoration: none;
+}
+
+.cancel-order a:active{
+   color: #1F2E55;
+}
+
+@media screen and (max-width:475px){
+   .bg-container{
+      width: 375px;
+      background-image: url(images/pattern-background-mobile.svg);
+   }
+
+   .component-container{
+      width: 327px;
+      height: 567px;
+   }
+
+   .img-illustration-hero{
+      background-size: contain;
+      width: 327px;
+      height: 160px;
+   }
+
+   h1{
+      margin-top: 32px;
+      font-size: 22px;
+      line-height: 29px;
+   }
+
+   p.description{
+      margin-top: 16px;
+      margin-left: 32px;
+      margin-right: 32px;
+      font-size: 15px;
+      line-height: 25px;
+   }
+
+   .plan{
+      width: 279px;
+      height: 81px;
+      margin-top: 24px;
+   }
+
+   svg{
+      margin-left: 16px;
+   }
+
+   .plan-description{
+      margin-left: 20px;
+      width: 81px;
+   }
+
+   .plan-title{
+      font-size: 14px;
+      line-height: 19px;
+   }
+
+   .plan-price{
+      font-size: 14px;
+      line-height: 19px;
+   }
+
+   .plan-change{
+      margin-left: 50px;
+      font-size: 13px;
+      line-height: 17px;
+   }
+   
+   .proceed-payment{
+      width: 279px;
+      height: 50px;
+      margin-top: 24px;
+
+   }
+
+   .cancel-order{
+      margin-top: 24px;
+   }
+}
